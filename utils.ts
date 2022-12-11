@@ -9,4 +9,4 @@ export const printSolutions = (first: number, second: number) => {
   console.log(`Part two: ${second}`);
 };
 
-export const sumArray = (numbers: []) => numbers.reduce((a, b) => a + b, 0);
+export const sumArray = (numbers: number[]) => numbers.reduce((a, b) => a + b, 0);
