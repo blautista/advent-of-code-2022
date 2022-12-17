@@ -32,7 +32,7 @@ const forEachStartOfCycle = (callback: (x: number, cycle: number) => void, total
   }
 };
 
-const getSignalStrenths = () => {
+const getSignalStrengths = () => {
   const signalStrengths: number[] = [];
   const relevantCycles = [20, 60, 100, 140, 180, 220];
 
@@ -64,7 +64,7 @@ const getCRTImage = () => {
   return screenOutput.map((e) => e.join(""));
 };
 
-const firstSolution = getSignalStrenths().reduce((a, b) => a + b, 0);
+const firstSolution = getSignalStrengths().reduce((a, b) => a + b, 0);
 const secondSolution = getCRTImage();
 
 printSolutions(firstSolution, secondSolution);
